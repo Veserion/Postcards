@@ -1,13 +1,11 @@
+/** @jsx jsx */
 import React from 'react'
 import styled from '@emotion/styled'
 import BigButton from '../BigButton'
 import Title from '../Title'
-
-const Item = styled.div`
-width: 200px;
-height: 200px;
-background: tomato;
-`
+import Item from "../Item";
+import {css, jsx} from "@emotion/core";
+import {goods} from "../../assets/goods";
 
 const ItemWrapper = styled.div`
   display: flex;
@@ -20,13 +18,17 @@ const ItemWrapper = styled.div`
 `
 
 export default class App extends React.Component {
-  render() {
-    return <Root>
-      <BigButton />
-      <Title />
-      <ItemWrapper>{Array.from({ length: 23 }, (_, i) => <Item key={i} />)}</ItemWrapper>
-    </Root>
-  }
+    render() {
+        return <Root>
+            <BigButton/>
+            <Title/>
+            <ItemWrapper>
+                {goods.map((url: any, i: number) =>
+                    <Item css={css`background-image: url(${url.default || url});`} key={i}/>
+                )}
+            </ItemWrapper>
+        </Root>
+    }
 }
 
 const Root = styled.div`
