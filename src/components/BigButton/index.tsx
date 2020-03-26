@@ -1,7 +1,5 @@
-/**@jsx jsx*/
 import React from 'react'
 import styled from '@emotion/styled'
-import { css, jsx } from '@emotion/core'
 import bgWithoutFocus from '../../icons/bigbutton/withoutFocus.png'
 import bgWithFocus from '../../icons/bigbutton/withFocus.png'
 export default class BigButton extends React.Component {
@@ -13,7 +11,7 @@ export default class BigButton extends React.Component {
 }
 
 const Root = styled.div`
-/* transition: .5s; */
+transition: .5s;
 position: fixed;
 top: 5%;
 right: 5%;
