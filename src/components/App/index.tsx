@@ -29,6 +29,7 @@ export default class App extends React.Component {
             </ItemWrapper>
         </Root>
     }
+
 }
 
 const Root = styled.div`
