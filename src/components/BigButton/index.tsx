@@ -5,7 +5,7 @@ import bgWithFocus from '../../icons/bigbutton/withFocus.png'
 export default class BigButton extends React.Component {
     render() {
         return <Root>
-            <Text>Grab all for <b>$35</b></Text>
+            <Text><b>Связаться</b> с нами</Text>
         </Root>
     }
 }
@@ -37,7 +37,7 @@ background-image: url(${bgWithFocus});
 const Text = styled.div`
 width: auto;
 height: auto;
-font-family: 'Gaegu', cursive;
+font-family: 'Amatic SC', cursive;
 font-size: 28px;
 b {font-weight: bold;}
 `

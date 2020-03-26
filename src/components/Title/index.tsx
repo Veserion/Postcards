@@ -3,14 +3,19 @@ import styled from '@emotion/styled'
 
 export default class Title extends React.Component {
     render() {
-        return <Root>:Doodle Patterns
-                <SubTitle>Collection of 61 seamless hand-drawn vector patterns crafted to make your next project shine ;)</SubTitle>
+        return <Root>Пати Кард
+                <SubTitle>
+                    Привет! Мы придумываем и производим крутые открытки, а также реализуем самые необычные дизайнерские идеи и решения.
+                    <br/>
+                    Главная задача для нас - сделать ваш мир ярче, а подарок - ещё приятнее!
+                </SubTitle>
         </Root>
     }
 }
 
 const Root = styled.div`
-font-family: 'Gaegu', cursive;
+font-family: 'Amatic SC', cursive;
+
 font-size: 165px;
 
 max-width: 1140px;
