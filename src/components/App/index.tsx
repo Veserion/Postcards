@@ -4,21 +4,30 @@ import BigButton from '../BigButton'
 import Title from '../Title'
 import Items from "../Items";
 
+const Background = styled.div`
+background-color: #fcfad7;
+display: flex;
+justify-content: center;
+`
+
 const Root = styled.div`
 display: flex;
 flex-direction: column;
 justify-content: flex-start;
 align-items: center;
-background-color: #fcfad7;
+width: 90vw;
+max-width: 1140px;
 `
 
 export default class App extends React.Component {
     render() {
-        return <Root>
-            <BigButton/>
-            <Title/>
-            <Items/>
-        </Root>
+        return <Background>
+            <Root>
+                <BigButton/>
+                <Title/>
+                <Items/>
+            </Root>
+        </Background>
     }
 
 }

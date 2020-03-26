@@ -10,15 +10,22 @@ export default class Title extends React.Component {
 }
 
 const Root = styled.div`
-margin-top: 200px;
 font-family: 'Gaegu', cursive;
-margin-bottom: 12px;
-font-size: 120px;
-text-align: center;
+font-size: 165px;
+
+max-width: 1140px;
+margin-top: 18%;
+margin-bottom: 12%;
+
+@media(max-width: 1280px){
+font-size: 100px;
+margin-top: 33%;
+margin-bottom: 20%;
+}
+
 `
 const SubTitle = styled.div`
 height: 100%;
 font-size: 40px;
 line-height: 50px;
-margin: 0 100px;
 `

@@ -11,18 +11,25 @@ export default class BigButton extends React.Component {
 }
 
 const Root = styled.div`
-transition: .5s;
+
 position: fixed;
+left: auto;
 top: 5%;
-right: 5%;
+right: 10%;
+z-index: 39;
+overflow: visible;
+padding: 16px 24px;
+background-position: 50% 50%;
+background-size: 100% 100%;
+background-attachment: scroll;
+transform: translate(0,-3px);
+text-decoration: none;
+
+transition: .4s;
 display: flex;
 justify-content: center;
 align-items: center;
-width: 245px;
-height: 72px;
-padding: 16px 24px;
 background-image: url(${bgWithFocus});
-background-size: 100% 100%;
 :hover {
     background-image: url(${bgWithoutFocus});
 }

@@ -8,8 +8,6 @@ import styled from "@emotion/styled";
 const Root = styled.div`
   display: flex;
   flex-wrap: wrap;
-  max-width: 90vw;
-  width: max-content;
   margin: -20px;
   & > * {
     margin: 20px;
