@@ -9,6 +9,7 @@ display: flex;
 flex-direction: column;
 justify-content: flex-start;
 align-items: center;
+background-color: #fcfad7;
 `
 
 export default class App extends React.Component {
