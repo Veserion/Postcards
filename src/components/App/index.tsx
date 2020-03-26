@@ -17,6 +17,7 @@ justify-content: flex-start;
 align-items: center;
 width: 90vw;
 max-width: 1140px;
+font-family: 'Amatic SC', cursive;
 `
 
 export default class App extends React.Component {

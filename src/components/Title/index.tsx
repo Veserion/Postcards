@@ -14,8 +14,6 @@ export default class Title extends React.Component {
 }
 
 const Root = styled.div`
-font-family: 'Amatic SC', cursive;
-
 font-size: 165px;
 
 max-width: 1140px;
