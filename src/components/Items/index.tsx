@@ -7,10 +7,13 @@ const Root = styled.div`
   display: flex;
   flex-wrap: wrap;
   margin: -20px;
+  
   & > * {
     margin: 20px;
   }
 `
+
+//https://codepen.io/levinmejia/pen/zrddrv
 
 export default class Items extends React.Component {
     render() {
@@ -19,4 +22,3 @@ export default class Items extends React.Component {
         </Root>
     }
 }
-
